@@ -74,4 +74,9 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: white;
+}
+
+.footer p{
+    font-size: 1rem;
 }
