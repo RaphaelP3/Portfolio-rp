@@ -14,9 +14,8 @@ body {
 
 .picture-list{
  display: flex;
+ justify-content: space-around;
  margin: 2rem;
- width: 100%;
- gap: 4rem;
 }
 
 .info-picture{
@@ -29,16 +28,16 @@ body {
     display: flex;
     width: 40%;
     height: 500px;
-    border: 1px solid rgb(161, 161, 161);
+    border: 1px solid white;
     padding: 1rem;
-    background-color:rgb(161, 161, 161) ;
+    background-color: white ;
     border-radius: 8px;
 }
 
 .info-list ul{
     list-style: none;
     text-decoration: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .info-list li{
