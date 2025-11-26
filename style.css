@@ -97,3 +97,9 @@ body {
     display: flex;
     gap: 2rem;
 }
+
+.icon img{
+    margin-top: 0.4rem;
+    width: 30px;
+    height: auto;
+}
