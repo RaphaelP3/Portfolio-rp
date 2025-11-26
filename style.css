@@ -1,8 +1,16 @@
+body {
+    background-color: #87C99B;
+    /* background-image: ; */
+
+}
+
 .section-project{
     display: flex;
+    justify-content: space-around;
     margin: 2rem;
     gap: 4rem;
     border: 1px solid rgb(176, 176, 176);
+    background-color: #87C99B;
 }
 
 .block-project{
@@ -11,11 +19,15 @@
     justify-content: center;
     align-items: center;
     gap: 0.7rem;
+    background-color: #87C99B;
 }
 
 .btn-project{
-    width: 100px;
+    width: 50%;
+    height: 50px;
     color: white;
     background-color: #144C25;
     border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
