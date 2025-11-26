@@ -1,6 +1,6 @@
 body {
     background-color: #87C99B;
-    background-image: url(/img-info/background.png);
+    background-image: url(/img-contact/background.png);
     background-size: cover;
 }
 
@@ -10,7 +10,6 @@ body {
     margin: 3rem;
     padding: 2rem;
     gap: 2rem;
-
 }
 
 .form-block {
@@ -20,7 +19,7 @@ body {
     padding: 1rem;
     border: 1px solid white;
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.6);
     width: 50%;
 }
 
@@ -35,19 +34,21 @@ body {
 }
 
 .input-name {
-    width: 50%;
+    width: 25%;
     height: 20px;
     border-radius: 10px;
     border: 1px solid rgb(81, 81, 81);
 }
 
 .input-email {
+    width: 70%;
     height: 20px;
     border-radius: 10px;
     border: 1px solid rgb(81, 81, 81);
 }
 
 .input-subject {
+    width: 70%;
     height: 20px;
     border-radius: 10px;
     border: 1px solid rgb(81, 81, 81);
@@ -59,16 +60,16 @@ body {
     border: 1px solid rgb(81, 81, 81);
 }
 
-.btn-position{
+.btn-position {
     display: flex;
     justify-content: center;
 }
 
-.btn-form{
+.btn-form {
     margin-top: 2rem;
     width: 25%;
     height: 30px;
-    background-color:white;
+    background-color: white;
     border-radius: 20px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -81,7 +82,7 @@ body {
     padding: 2rem;
     border: 1px solid white;
     border-radius: 8px;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.6);
     width: 30%;
     gap: 2rem;
 }
@@ -93,12 +94,12 @@ body {
     font-size: 1.5rem;
 }
 
-.contact-element{
+.contact-element {
     display: flex;
     gap: 2rem;
 }
 
-.icon img{
+.icon img {
     margin-top: 0.4rem;
     width: 30px;
     height: auto;
