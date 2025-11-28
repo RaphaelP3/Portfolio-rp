@@ -34,6 +34,10 @@ body {
     cursor: pointer;
 }
 
+.btn-project:hover{
+    background-color: #047526;
+}
+
 @media (max-width: 1120px) {
     .section-project {
         flex-wrap: wrap;
@@ -52,10 +56,6 @@ body {
         width: 60%;
         font-size: 1.3rem;
         height: 45px;
-    }
-
-    .btn-project:hover{
-        background-color: #047526;
     }
 }
 
