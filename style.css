@@ -4,7 +4,7 @@ body {
     background-size: cover;
 }
 
-.section-project{
+.section-project {
     display: flex;
     justify-content: space-around;
     margin: 2rem;
@@ -12,7 +12,7 @@ body {
     border: 1px solid rgb(176, 176, 176);
 }
 
-.block-project{
+.block-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,11 +20,7 @@ body {
     gap: 0.7rem;
 }
 
-
-
-
-
-.btn-project{
+.btn-project {
     width: 50%;
     height: 50px;
     color: white;
@@ -35,43 +31,43 @@ body {
 }
 
 @media (max-width: 1024px) {
-.section-project {
-flex-wrap: wrap;
-justify-content: center;
-gap: 3rem;
-padding: 1.5rem;
-}
+    .section-project {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
 
 
-.block-project img {
-max-width: 300px;
-}
+    .block-project img {
+        max-width: 300px;
+    }
 
 
-.btn-project {
-width: 60%;
-font-size: 1.5rem;
-height: 45px;
-}
+    .btn-project {
+        width: 60%;
+        font-size: 1.5rem;
+        height: 45px;
+    }
 }
 
 @media (max-width: 600px) {
-.section-project {
-flex-direction: column;
-align-items: center;
-gap: 2rem;
-margin: 1rem;
-}
+    .section-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+    }
 
 
-.block-project img {
-max-width: 260px;
-}
+    .block-project img {
+        max-width: 260px;
+    }
 
 
-.btn-project {
-width: 70%;
-font-size: 1.3rem;
-height: 45px;
-}
+    .btn-project {
+        width: 70%;
+        font-size: 1.3rem;
+        height: 45px;
+    }
 }
