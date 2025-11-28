@@ -12,82 +12,92 @@ body {
     background-size: cover;
 }
 
-.picture-list{
- display: flex;
- justify-content: space-around;
- align-items: center;
- margin: 2rem;
-}
-
-.info-picture{
+.picture-list {
     display: flex;
-    width: 40%;
-    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    gap: 5rem;
 }
 
-.info-list{
+.info-picture {
+    display: flex;
+    width: 50%;
+
+}
+
+.info-list {
     display: flex;
     width: 40%;
     height: 500px;
     border: 1px solid white;
     padding: 1rem;
-    background-color: white ;
+    background-color: white;
     border-radius: 8px;
 }
 
-.info-list ul{
+.info-list ul {
     list-style: none;
     text-decoration: none;
     margin-bottom: 1rem;
 }
 
-.info-list li{
+.info-list li {
     margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
-.picture-list {
-flex-direction: column;
-gap: 2rem;
-margin: 2rem 1rem;
-}
+    .picture-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 3rem 1rem;
+    }
 
 
-.info-picture,
-.info-list {
-width: 80%;
-height: auto;
-}
+    .info-picture,
+    .info-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: auto;
+    }
 
+    .info-picture img {
+        width: 60%;
+    }
 
-.info-list li {
-margin-bottom: 1.5rem;
-font-size: 1.1rem;
-}
+    .info-list li {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
-.picture-list {
-flex-direction: column;
-gap: 1.5rem;
-margin: 1rem;
-}
+    .picture-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
 
 
-.info-picture,
-.info-list {
-width: 100%;
-height: auto;
-}
+    .info-picture,
+    .info-list {
+        width: 60%;
+        height: auto;
+    }
 
 
-.info-list {
-padding: 1rem;
-}
+    .info-list {
+        padding: 1rem;
+    }
 
-
-.info-list li {
-margin-bottom: 1rem;
-font-size: 1rem;
-}
+    .info-list li {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
 }
