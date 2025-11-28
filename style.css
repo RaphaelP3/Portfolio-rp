@@ -202,6 +202,11 @@ margin-top: 2rem;
 font-size: 2rem;
 margin-top: 1rem;
 }
+
+.block-photo img{
+    width: 80%;
+}
+
 }
 
 
@@ -223,13 +228,20 @@ display: none;
 }
 
 .name h1 {
-font-size: 2rem;
+font-size: 1.8rem;
 }
 
 .name p {
-font-size: 1.5rem;
+font-size: 1.2rem;
 }
 
+.name-photo-home{
+    gap: 0.8rem;
+}
+
+.block-photo img{
+    width: 80%;
+}
 
 .footer p {
 font-size: 0.8rem;
