@@ -15,6 +15,8 @@ body {
 .header {
     background-color: #47965F;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .nav {
@@ -41,7 +43,7 @@ body {
 }
 
 .menu-mobile-burger{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -76,7 +78,7 @@ body {
 }
 
 .menu-mobile-body{
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 }
 
 .menu-mobile-item{
@@ -92,8 +94,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 0;
-    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -142,6 +144,7 @@ body {
     text-align: center;
     align-items: center;
     margin-bottom: 2rem;
+    margin-top: 4rem;
 }
 
 .block-photo img{
@@ -168,13 +171,6 @@ body {
     font-size: 1rem;
 }
 
-/* Ajout pour le menu burger */
-
-@media screen and (min-width:1025px){
-     .menu-mobile-burger{
-        display: none;
-    }
-}
 
 @media (max-width: 1024px) {
 .nav a {
@@ -184,6 +180,8 @@ font-size: 1.5rem;
 .name-photo-home {
 flex-direction: column;
 text-align: center;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -209,21 +207,24 @@ margin-top: 1rem;
 
 @media (max-width: 768px) {
 
-/* .nav {
-flex-direction: column;
-align-items: center;
-gap: 0.5rem;
+.menu-mobile-burger{
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
 }
 
+.nav{
+    height: 50px;
+}
 
 .nav a {
-font-size: 1.2rem;
-} */
+display: none;
+}
 
 .name h1 {
 font-size: 2rem;
 }
-
 
 .name p {
 font-size: 1.5rem;
