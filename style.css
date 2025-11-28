@@ -8,8 +8,8 @@
 
 body {
     background-color: #87C99B;
-    /* background-image: ; */
-
+    background-image: url(/img-accueil/background.png);
+    background-size: cover;
 }
 
 .header {
