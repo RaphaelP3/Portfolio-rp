@@ -33,6 +33,80 @@ body {
     /* font-family: ; */
 }
 
+/* Ajout pour le menu burger */
+
+.menu-mobile-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.menu-mobile-burger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-mobile-burger span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #1a1a1a;
+    transition: transform 0.3s ease, opacity 0.3s ease ;
+}
+
+#menuMobileBurger:checked + .header .menu-mobile-burger span:nth-child(1) {
+     transform: translateY(8px) rotate(45deg)
+}
+
+#menuMobileBurger:checked + .header .menu-mobile-burger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuMobileBurger:checked + .header .menu-mobile-burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+#menuMobileBurger:checked ~ .menu-mobile {
+    display: block;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-body{
+    padding: 1rem 1.5rem;
+}
+
+.menu-mobile-item{
+    border-bottom: 1px solid #d8def2;
+    display: flex;
+}
+
+.menu-mobile-link{
+    width: 100%;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-mobile{
+    width: 100%;
+    padding: 0.9rem;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+/* Fin menu burger */
 
 .name-photo-home {
     display: flex;
@@ -94,11 +168,18 @@ body {
     font-size: 1rem;
 }
 
+/* Ajout pour le menu burger */
+
+@media screen and (min-width:1025px){
+     .menu-mobile-burger{
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
 .nav a {
 font-size: 1.5rem;
 }
-
 
 .name-photo-home {
 flex-direction: column;
@@ -128,7 +209,7 @@ margin-top: 1rem;
 
 @media (max-width: 768px) {
 
-.nav {
+/* .nav {
 flex-direction: column;
 align-items: center;
 gap: 0.5rem;
@@ -137,7 +218,7 @@ gap: 0.5rem;
 
 .nav a {
 font-size: 1.2rem;
-}
+} */
 
 .name h1 {
 font-size: 2rem;
