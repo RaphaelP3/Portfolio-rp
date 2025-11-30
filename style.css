@@ -1,142 +1,17 @@
-body {
-    background-color: #87C99B;
-    background-image: url(/img-projet/background.png);
-    background-size: cover;
-}
-
-.section-project {
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem;
-    gap: 3rem;
-    border: 1px solid rgb(176, 176, 176);
-}
-
-.block-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
-}
-
-.block-project img{
-    max-width: 500px;
-}
-
-.btn-project {
-    width: 50%;
-    height: 50px;
-    color: white;
-    background-color: #144C25;
-    border-radius: 20px;
-    font-size: 1.7rem;
-    cursor: pointer;
-}
-
-.btn-project:hover{
-    background-color: #047526;
-}
-
-@media (max-width: 1120px) {
-    .section-project {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
-        padding: 1.5rem;
-    }
-
-
-    .block-project img {
-        max-width: 300px;
-    }
-
-
-    .btn-project {
-        width: 60%;
-        font-size: 1.3rem;
-        height: 45px;
 *,
 ::before,
 ::after {
     padding: 0;
     margin: 0;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
 
-body {
+}body {
     background-color: #87C99B;
-    background-image: url(/img-info/background.png);
+    background-image: url(/img-projet/background.png);
     background-size: cover;
 }
 
-.picture-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2rem;
-    gap: 2rem;
-}
-
-.info-picture {
-    display: flex;
-    width: 50%;
-
-}
-
-.info-list {
-    display: flex;
-    width: 40%;
-    height: 500px;
-    border: 1px solid white;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 8px;
-    
-}
-
-.info-list ul {
-    list-style: none;
-    text-decoration: none;
-    margin-bottom: 1rem;
-}
-
-.info-list li {
-    margin-bottom: 2rem;
-}
-
-@media (max-width: 1100px) {
-    .picture-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 2rem;
-        margin: 3rem 1rem;
-    }
-
-
-    .info-picture,
-    .info-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
-        height: auto;
-    }
-
-    .info-picture img {
-        width: 60%;
-    }
-
-    .info-list li {
-        margin-bottom: 1.5rem;
-    background-image: url(/img-accueil/background.png);
-    background-size: cover;
-}
+/*Page index*/
 
 .header {
     background-color: #47965F;
@@ -165,6 +40,7 @@ body {
     color: black;
     /* font-family: ; */
 }
+
 
 /* Ajout pour le menu burger */
 
@@ -366,7 +242,6 @@ margin-top: 1rem;
 
 }
 
-
 @media screen and (max-width: 768px) {
 
 header{
@@ -427,11 +302,184 @@ font-size: 1.2rem;
 .footer p {
 font-size: 0.8rem;
 }
-body {
-    background-color: #87C99B;
-    background-image: url(/img-contact/background.png);
+}
+
+/*Page à propos*/
+
+.picture-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.info-picture {
+    display: flex;
+    width: 50%;
+
+}
+
+.info-list {
+    display: flex;
+    width: 40%;
+    height: 500px;
+    border: 1px solid white;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    
+}
+
+.info-list ul {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.info-list li {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 1100px) {
+    .picture-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 3rem 1rem;
+    }
+
+
+    .info-picture,
+    .info-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: auto;
+    }
+
+    .info-picture img {
+        width: 60%;
+    }
+
+    .info-list li {
+        margin-bottom: 1.5rem;
+    background-image: url(/img-accueil/background.png);
     background-size: cover;
 }
+}
+
+@media (max-width: 768px){
+    
+
+    .picture-list {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 1rem;
+    }
+
+
+    .info-picture,
+    .info-list {
+        width: 60%;
+        height: auto;
+    }
+
+
+    .info-list {
+        padding: 1rem;
+    }
+
+    .info-list li {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+}
+}
+
+/*Page Projet*/
+
+.section-project {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    gap: 3rem;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+.block-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.block-project img{
+    max-width: 500px;
+}
+
+.btn-project {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: #144C25;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn-project:hover{
+    background-color: #047526;
+}
+
+@media (max-width: 1120px) {
+    .section-project {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
+
+
+    .block-project img {
+        max-width: 300px;
+    }
+
+
+    .btn-project {
+        width: 60%;
+        font-size: 1.3rem;
+        height: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+
+    .block-project img {
+        max-width: 250px;
+    }
+
+
+    .btn-project {
+        width: 70%;
+        font-size: 1.1rem;
+        height: 45px;
+    }
+}
+
+
+/*Page contact*/
 
 .form-contact {
     display: flex;
@@ -565,45 +613,9 @@ body {
     }
 }
 
+
 @media (max-width: 768px) {
-    .section-project {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin: 1rem;
-    }
 
-
-    .block-project img {
-        max-width: 250px;
-    }
-
-
-    .btn-project {
-        width: 70%;
-        font-size: 1.1rem;
-        height: 45px;
-    .picture-list {
-        flex-direction: column;
-        gap: 1.5rem;
-        margin: 1rem;
-    }
-
-
-    .info-picture,
-    .info-list {
-        width: 60%;
-        height: auto;
-    }
-
-
-    .info-list {
-        padding: 1rem;
-    }
-
-    .info-list li {
-        margin-bottom: 1rem;
-        font-size: 0.8rem;
     .form-contact {
         flex-direction: column;
         align-items: center;
