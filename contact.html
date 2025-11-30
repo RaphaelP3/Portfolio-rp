@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" class="menu-mobile-checkbox" id="menuMobileBurger">
+    <header class="header">
+        <!-- Créer et mettre un logo -->   
+         <div class="mobile-name">
+            <div>
+                <h1>Raphaël Pucet</h1>
+            </div>
+            <div>
+                <p>Développeur Front-End</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="">Accueil</a>
+            <a href="">A propos</a>
+            <a href="">Projets</a>
+            <a href="">Contact</a>
+        </nav>
+     
+        
+        <label for="menuMobileBurger" class="menu-mobile-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <div class="menu-mobile">
+        <div class="menu-mobile-body">
+            <div class="menu-mobile-item">
+                <button class="menu-mobile-link">Accueil</button>
+            </div>
+            <div class="menu-mobile-item">
+                <button class="menu-mobile-link">A propos</button>
+            </div>
+            <div class="menu-mobile-item">
+                <button class="menu-mobile-link">Projets</button>
+            </div>
+            <div class="menu-mobile-item">
+                <button class="menu-mobile-link">Contact</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="form-contact">
+            <div class="form-block">
+                <p class="form-info">
+                    Veuillez remplir le formulaire si vous avez une demande ou un projet en tête.
+                </p>
+                <form class="form-body" action="">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name" class="input-name" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="input-email">
+                    <label for="subject">Sujet</label>
+                    <input type="text" name="subject" id="subject" class="input-subject" required>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" class="textarea-message" required>Message</textarea>
+                    <div class="btn-position">
+                        <button class="btn-form">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-block">
+                <p class="contact-info">Contact</p>
+                <div class="contact-element">
+                    <div class="icon">
+                        <img src="/img-contact/email.png" alt="mail">
+                    </div>
+                    <p>pucet.raphael@hotmail.fr</p>
+                </div>
+                <div class="contact-element">
+                    <div class="icon">
+                        <img src="/img-contact/telephone.png" alt="phone">
+                    </div>
+                    <p>08.88.84.51.85</p>
+                </div>
+                <div class="contact-element"> 
+                    <div class="icon">
+                        <img src="/img-contact/localisation.png" alt="localisation">
+                    </div>
+                    <p>51 La Cornillère, Roz-Landrieux</p>
+                </div>
+                <div class="contact-element">
+                    <div class="icon">
+                        <img src="/img-contact/instagram.png" alt="instagram">
+                    </div>
+                    <p>Lien Instagram</p>
+                </div>
+                <div class="contact-element">
+                    <div class="icon">
+                        <img src="/img-contact/sociale.png" alt="linkedin">
+                    </div>
+                    <p>Lien linkedin</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-reseau">
+                <a href=""><img src="/img-contact/sociale.png" alt=""></a>
+                <a href=""><img src="/img-contact/instagram.png" alt=""></a> 
+            </div>
+            <div class="footer-text">
+            <p>©R.Pucet - Tous droits réservés</p>
+        </div>
+        </div>   
+        
+    </footer>
+</body>
+
+</html>
