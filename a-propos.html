@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>A propos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <input type="checkbox" class="menu-mobile-checkbox" id="menuMobileBurger">
     <header class="header">
@@ -34,6 +32,7 @@
             <span></span>
         </label>
     </header>
+
     <div class="menu-mobile">
         <div class="menu-mobile-body">
             <div class="menu-mobile-item">
@@ -50,24 +49,33 @@
             </div>
         </div>
     </div>
-
     <main>
-        <section class="name-photo-home">
-            <div class="name">
-                <h1>Raphaël Pucet</h1>
-                <p>Développeur Front-End</p>
-            </div>
-            <div class="block-photo">
-                    <img src="/img-accueil/photo1.png" alt="">
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
+    <section class="picture-list">
+        <!-- Mettre l'image dans la div en dessous -->
+        <div class="info-picture">
+            <img src="/img-info/propos.png" alt="About-me" class="picture"></div> 
+        <div class="info-list">
+            <ul>
+                <li><strong>Age :</strong> 32 </li>
+                <li><strong>Nationnalité :</strong> Français</li>
+                <li><strong>Langues :</strong> </li>
+                <li>Français, Anglais</li>
+                <li><strong>Formation :</strong></li>
+                <li>Intégrateur Front-End</li>
+                <li><strong>Compétences :</strong></li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+        
+    </section>
+   </main>
+   <footer class="footer">
         <div class="footer-content">
             <div class="footer-reseau">
-                <a href=""><img src="/img-accueil/sociale.png" alt=""></a>
-                <a href=""><img src="/img-accueil/instagram.png" alt=""></a> 
+                <a href=""><img src="/img-info/sociale.png" alt=""></a>
+                <a href=""><img src="/img-info/instagram.png" alt=""></a> 
             </div>
             <div class="footer-text">
             <p>©R.Pucet - Tous droits réservés</p>
@@ -76,5 +84,4 @@
         
     </footer>
 </body>
-
 </html>
