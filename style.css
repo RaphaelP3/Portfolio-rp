@@ -1,3 +1,61 @@
+body {
+    background-color: #87C99B;
+    background-image: url(/img-projet/background.png);
+    background-size: cover;
+}
+
+.section-project {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    gap: 3rem;
+    border: 1px solid rgb(176, 176, 176);
+}
+
+.block-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.block-project img{
+    max-width: 500px;
+}
+
+.btn-project {
+    width: 50%;
+    height: 50px;
+    color: white;
+    background-color: #144C25;
+    border-radius: 20px;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn-project:hover{
+    background-color: #047526;
+}
+
+@media (max-width: 1120px) {
+    .section-project {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+        padding: 1.5rem;
+    }
+
+
+    .block-project img {
+        max-width: 300px;
+    }
+
+
+    .btn-project {
+        width: 60%;
+        font-size: 1.3rem;
+        height: 45px;
 *,
 ::before,
 ::after {
@@ -508,6 +566,23 @@ body {
 }
 
 @media (max-width: 768px) {
+    .section-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+
+    .block-project img {
+        max-width: 250px;
+    }
+
+
+    .btn-project {
+        width: 70%;
+        font-size: 1.1rem;
+        height: 45px;
     .picture-list {
         flex-direction: column;
         gap: 1.5rem;
