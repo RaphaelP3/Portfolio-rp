@@ -108,6 +108,11 @@
     cursor: pointer;
 }
 
+.menu-mobile-link a{
+    text-decoration: none;
+    color: black;
+}
+
 .btn-mobile{
     width: 100%;
     padding: 0.9rem;
